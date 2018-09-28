@@ -14,7 +14,7 @@ main: bin/main
 	docker build -t main:$(VERSION) .
 
 run-targets: main 
-	docker run -d -p 80:8080 --name main main:$(VERSION)
+	docker run -d -p 80:80 --name main main:$(VERSION)
 
 clean: 
 	docker stop main
