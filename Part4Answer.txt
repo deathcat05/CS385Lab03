@@ -1,0 +1,11 @@
+When I scaled the output, I received three identical replications of the same Go web server. Scaling this output allows for a guarantee of always having at least 1 application being able to communicate externally. The response from the curl request doesn't change due to this. This is evident by the following: 
+deathcat05 ~ $: curl http://35.230.4.175
+6995e963a5cddeathcat05 ~ $: curl http://35.230.4.175
+6995e963a5cddeathcat05 ~ $: curl http://35.230.4.175
+6995e963a5cddeathcat05 ~ $: curl http://35.185.238.141
+echohost-67686c9596-486dmdeathcat05 ~ $: curl http://35.185.238.141
+echohost-67686c9596-486dmdeathcat05 ~ $: curl http://35.185.238.141
+echohost-67686c9596-486dmdeathcat05 ~ $: curl http://35.185.238.141
+echohost-67686c9596-486dmdeathcat05 ~ $: curl http://35.185.238.141
+echohost-67686c9596-486dmdeathcat05 ~ $: curl http://35.185.238.141
+echohost-67686c9596-486dmdeathcat05 ~ $:
